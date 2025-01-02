@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: right;
+}
+.content > .menu {
+    border-radius: 20px;
+    width: 600%;
+    margin: auto;
+    box-shadow: 0px 0px 15px white;
+}
+
+body {
+    background: url(tiger.jpg);
+    color: rgb(0, 0, 0);
+}
+
+header {
+    background: linear-gradient(135deg, #130303, #de2a78);
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgb(5, 0, 0);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 30px 50px;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s;
+    font-size: 15px;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #ffeb3b;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    top: -3px;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+#hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: left;
+    animation: slideIn 1s ease-out;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: #ffeb3b;
+    color: #333;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #fdd835;
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: left;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service {
+    background: #fff;
+    color: #0a0000;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    display: inline-block;
+    width: calc(33.333% - 40px);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    transition: transform 0.15s, box-shadow 0.5s;
+    animation: slideIn 0s ease-out;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgb(3, 0, 0);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background-color: transparent;
+    transform: rotateY(-5px);
+}
+
+footer {
+    background: linear-gradient(135deg, #ff6f61, #de2a78);
+    color: #000000;
+    text-align: left;
+    padding: 10px 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 1 auto;
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(247, 8, 8, 0);
+}
+
+form label {
+    display: block;
+    margin-bottom: 1px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #a13f3f;
+}
+
+form button {
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background: #de2a78;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 1; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

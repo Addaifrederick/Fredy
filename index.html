@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - The Balance Church</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>The Balance Church</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome to The Balance Church</h2>
+            <p>Embracing faith, fostering community, and transforming lives.</p>
+            <a href="#services" class="cta-button">Discover More</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At The Balance Church, we are committed to nurturing a balanced life through faith, fellowship, and service. Join us as we strive to make a positive impact in our community and beyond.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <div class="service-icon">📅</div>
+                <h3>Sunday Worship</h3>
+                <p>Experience our uplifting worship services every Sunday at 10:00 AM.</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">📖</div>
+                <h3>Bible Study</h3>
+                <p>Engage in enriching Bible study sessions every Wednesday at 7:00 PM.</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">🤝</div>
+                <h3>Community Outreach</h3>
+                <p>Participate in our community outreach programs to support and serve those in need.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="section">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Charity Gala - August 20, 2024</li>
+                <li>Family Fun Day - September 15, 2024</li>
+                <li>Christmas Celebration - December 24, 2024</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>The Balance Church. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
